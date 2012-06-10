@@ -17,9 +17,6 @@ class Connection
         self::connect();
         $result = mysql_query($query, self::$conexion);
         $count = 0;
-        $finalResult;
-        echo $query;
-        exit;
         
         while ($tempArray = mysql_fetch_array($result))
         {
