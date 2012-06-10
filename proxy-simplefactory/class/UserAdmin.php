@@ -44,7 +44,7 @@ class UserAdmin
 
     protected function fetchAll()
     {
-        $query = "SELECT * FROM USER u, useradmin ua WHERE u.idUser = ua.User_idUser";
+        $query = "SELECT * FROM user u, useradmin ua WHERE u.idUser = ua.User_idUser";
         $result = Connection::fetchAll($query);
         return $result;
     }

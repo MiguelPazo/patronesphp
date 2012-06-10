@@ -44,7 +44,7 @@ class UserGeneric
 
     protected function fetchAll()
     {
-        $query = "SELECT * FROM USER u, usergeneric ug WHERE u.idUser = ug.User_idUser";
+        $query = "SELECT * FROM user u, usergeneric ug WHERE u.idUser = ug.User_idUser";
         $result = Connection::fetchAll($query);
         return $result;
     }
