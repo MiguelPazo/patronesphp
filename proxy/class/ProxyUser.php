@@ -18,7 +18,7 @@ class ProxyUser
         $this->typeUser = $typeUser;
     }
     
-    public function save($codOrLevel)
+    public function saveUser($codOrLevel)
     {
         if ($this->typeUser == 1)
         {
@@ -56,10 +56,4 @@ class ProxyUser
             return $allUserGeneric;
         }
     }
-    
-    public function saveUser()
-    {
-        
-    }
-
 }

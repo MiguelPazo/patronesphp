@@ -17,7 +17,7 @@ class UserAdmin
         $this->codeAdmin = $codeAdmin;
     }
 
-    protected function saveUser()
+    protected function saveUser($codOrLevel)
     {
         $queryUser = "insert into user (code, name, lastName, date) values(
                     '{$this->getCode()}',

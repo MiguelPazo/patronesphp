@@ -16,7 +16,7 @@ abstract class User
         $this->date = $date;
     }
 
-    abstract protected function saveUser();
+    abstract protected function saveUser($codOrLevel);
     abstract protected function fetchAll();
 
     function getCode()

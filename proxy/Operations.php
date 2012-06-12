@@ -17,7 +17,7 @@ if (isset($_POST['oper']))
                             $_POST['lastName'],
                             date('Y-m-d'));
             
-            if ($proxyUser->save($_POST['codeAdmin']))
+            if ($proxyUser->saveUser($_POST['codeAdmin']))
                 $mensaje = 'New administrator successfully registered';
             else
                 $mensaje = 'Error';
@@ -31,7 +31,7 @@ if (isset($_POST['oper']))
                             $_POST['lastName'],
                             date('Y-m-d'));
             
-            if ($proxyUser->save($_POST['levelAccount']))
+            if ($proxyUser->saveUser($_POST['levelAccount']))
                 $mensaje = 'New generic user successfully registered';
             else
                 $mensaje = 'Error';

@@ -17,7 +17,7 @@ class UserGeneric
         $this->levelUser = $levelUser;
     }
 
-    protected function saveUser()
+    protected function saveUser($codOrLevel)
     {
         $queryUser = "insert into user (code, name, lastName, date) values(
                     '{$this->getCode()}',

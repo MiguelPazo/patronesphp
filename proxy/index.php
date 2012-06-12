@@ -1,20 +1,6 @@
 <?php
 require_once 'configSpace.php';
 require_once 'Operations.php';
-//require_once $_SESSION['CLASS'] . 'ProxyUser.php';
-
-//$proxyUser = new ProxyUser(
-//                1,
-//                '1233',
-//                'Andrea',
-//                'Pazo',
-//                '2012-10-12');
-//if ($proxyUser->saveUser('4567'))
-//    $mensaje = 'New administrator successfully registered';
-//else
-//    $mensaje = 'Error';
-//echo $mensaje;
-//exit;
 ?>
 
 <!DOCTYPE HTML>
